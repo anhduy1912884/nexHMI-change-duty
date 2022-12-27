@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"f4_button_nextion\startup_stm32f411xe.o"
+"f4_button_nextion\main.o"
+"f4_button_nextion\stm32f4xx_it.o"
+"f4_button_nextion\stm32f4xx_hal_msp.o"
+"f4_button_nextion\stm32f4xx_hal_tim.o"
+"f4_button_nextion\stm32f4xx_hal_tim_ex.o"
+"f4_button_nextion\stm32f4xx_hal_uart.o"
+"f4_button_nextion\stm32f4xx_hal_rcc.o"
+"f4_button_nextion\stm32f4xx_hal_rcc_ex.o"
+"f4_button_nextion\stm32f4xx_hal_flash.o"
+"f4_button_nextion\stm32f4xx_hal_flash_ex.o"
+"f4_button_nextion\stm32f4xx_hal_flash_ramfunc.o"
+"f4_button_nextion\stm32f4xx_hal_gpio.o"
+"f4_button_nextion\stm32f4xx_hal_dma_ex.o"
+"f4_button_nextion\stm32f4xx_hal_dma.o"
+"f4_button_nextion\stm32f4xx_hal_pwr.o"
+"f4_button_nextion\stm32f4xx_hal_pwr_ex.o"
+"f4_button_nextion\stm32f4xx_hal_cortex.o"
+"f4_button_nextion\stm32f4xx_hal.o"
+"f4_button_nextion\stm32f4xx_hal_exti.o"
+"f4_button_nextion\system_stm32f4xx.o"
+--strict --scatter "f4_button_nextion\f4_button_nextion.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "f4_button_nextion.map" -o f4_button_nextion\f4_button_nextion.axf
